@@ -1,0 +1,646 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<smile version="1.0" id="Network1" numsamples="1000" discsamples="10000">
+	<nodes>
+		<deterministic id="samsung_galaxy_s6_edge">
+			<state id="nie" />
+			<state id="tak" />
+			<resultingstates>tak</resultingstates>
+		</deterministic>
+		<deterministic id="htc_one_mini">
+			<state id="nie" />
+			<state id="tak" />
+			<resultingstates>tak</resultingstates>
+		</deterministic>
+		<deterministic id="huawei_honor_6_plus_dual_sim">
+			<state id="nie" />
+			<state id="tak" />
+			<resultingstates>tak</resultingstates>
+		</deterministic>
+		<deterministic id="samsung_solid_b2700">
+			<state id="nie" />
+			<state id="tak" />
+			<resultingstates>tak</resultingstates>
+		</deterministic>
+		<deterministic id="sony_xperia_m2_aqua">
+			<state id="nie" />
+			<state id="tak" />
+			<resultingstates>tak</resultingstates>
+		</deterministic>
+		<deterministic id="duzy_ekran">
+			<state id="nie" />
+			<state id="tak" />
+			<parents>samsung_galaxy_s6_edge huawei_honor_6_plus_dual_sim</parents>
+			<resultingstates>tak tak tak tak</resultingstates>
+		</deterministic>
+		<deterministic id="maly_ekran">
+			<state id="nie" />
+			<state id="tak" />
+			<parents>htc_one_mini samsung_solid_b2700 sony_xperia_m2_aqua</parents>
+			<resultingstates>tak tak tak tak tak tak tak tak</resultingstates>
+		</deterministic>
+		<deterministic id="dobry_procesor">
+			<state id="nie" />
+			<state id="tak" />
+			<parents>samsung_galaxy_s6_edge</parents>
+			<resultingstates>tak tak</resultingstates>
+		</deterministic>
+		<deterministic id="duza_pamiec_wewnetrzna">
+			<state id="nie" />
+			<state id="tak" />
+			<parents>samsung_galaxy_s6_edge</parents>
+			<resultingstates>tak tak</resultingstates>
+		</deterministic>
+		<deterministic id="wytrzymala_bateria">
+			<state id="nie" />
+			<state id="tak" />
+			<resultingstates>tak</resultingstates>
+		</deterministic>
+		<deterministic id="przedni_aparat">
+			<state id="nie" />
+			<state id="tak" />
+			<parents>samsung_galaxy_s6_edge</parents>
+			<resultingstates>tak tak</resultingstates>
+		</deterministic>
+		<deterministic id="dobry_aparat">
+			<state id="nie" />
+			<state id="tak" />
+			<parents>samsung_galaxy_s6_edge</parents>
+			<resultingstates>tak tak</resultingstates>
+		</deterministic>
+		<deterministic id="lte">
+			<state id="nie" />
+			<state id="tak" />
+			<parents>samsung_galaxy_s6_edge</parents>
+			<resultingstates>tak tak</resultingstates>
+		</deterministic>
+		<deterministic id="jeden_gb_ramu">
+			<state id="nie" />
+			<state id="tak" />
+			<parents>htc_one_mini</parents>
+			<resultingstates>tak tak</resultingstates>
+		</deterministic>
+		<deterministic id="dwa_gb_ramu">
+			<state id="nie" />
+			<state id="tak" />
+			<resultingstates>tak</resultingstates>
+		</deterministic>
+		<deterministic id="trzy_gb_ramu">
+			<state id="nie" />
+			<state id="tak" />
+			<parents>samsung_galaxy_s6_edge huawei_honor_6_plus_dual_sim</parents>
+			<resultingstates>tak tak tak tak</resultingstates>
+		</deterministic>
+		<deterministic id="cztery_gb_ramu">
+			<state id="nie" />
+			<state id="tak" />
+			<resultingstates>tak</resultingstates>
+		</deterministic>
+		<deterministic id="nfc">
+			<state id="nie" />
+			<state id="tak" />
+			<parents>samsung_galaxy_s6_edge huawei_honor_6_plus_dual_sim</parents>
+			<resultingstates>tak tak tak tak</resultingstates>
+		</deterministic>
+		<deterministic id="gps">
+			<state id="nie" />
+			<state id="tak" />
+			<parents>samsung_galaxy_s6_edge</parents>
+			<resultingstates>tak tak</resultingstates>
+		</deterministic>
+		<deterministic id="szybkie_ladowanie">
+			<state id="nie" />
+			<state id="tak" />
+			<resultingstates>tak</resultingstates>
+		</deterministic>
+		<deterministic id="dual_sim">
+			<state id="nie" />
+			<state id="tak" />
+			<parents>huawei_honor_6_plus_dual_sim</parents>
+			<resultingstates>tak tak</resultingstates>
+		</deterministic>
+		<deterministic id="dobra_jakosc_dzwieku">
+			<state id="nie" />
+			<state id="tak" />
+			<resultingstates>tak</resultingstates>
+		</deterministic>
+		<deterministic id="wygodne_wprowadzanie_tekstu">
+			<state id="nie" />
+			<state id="tak" />
+			<resultingstates>tak</resultingstates>
+		</deterministic>
+		<deterministic id="czytnik_linii_papilarnych">
+			<state id="nie" />
+			<state id="tak" />
+			<resultingstates>tak</resultingstates>
+		</deterministic>
+		<deterministic id="duze_dpi">
+			<state id="nie" />
+			<state id="tak" />
+			<resultingstates>tak</resultingstates>
+		</deterministic>
+		<deterministic id="bluetooth">
+			<state id="nie" />
+			<state id="tak" />
+			<parents>samsung_galaxy_s6_edge huawei_honor_6_plus_dual_sim</parents>
+			<resultingstates>tak tak tak tak</resultingstates>
+		</deterministic>
+		<deterministic id="dotykowy">
+			<state id="nie" />
+			<state id="tak" />
+			<parents>samsung_galaxy_s6_edge</parents>
+			<resultingstates>tak tak</resultingstates>
+		</deterministic>
+		<deterministic id="wytrzymaly">
+			<state id="nie" />
+			<state id="tak" />
+			<parents>samsung_solid_b2700</parents>
+			<resultingstates>tak tak</resultingstates>
+		</deterministic>
+		<deterministic id="odporny_na_snieg">
+			<state id="nie" />
+			<state id="tak" />
+			<parents>wytrzymaly</parents>
+			<resultingstates>tak tak</resultingstates>
+		</deterministic>
+		<deterministic id="wodoodporny">
+			<state id="nie" />
+			<state id="tak" />
+			<parents>sony_xperia_m2_aqua wytrzymaly</parents>
+			<resultingstates>tak tak tak tak</resultingstates>
+		</deterministic>
+		<deterministic id="wstrzasoodporny">
+			<state id="nie" />
+			<state id="tak" />
+			<parents>wytrzymaly</parents>
+			<resultingstates>tak tak</resultingstates>
+		</deterministic>
+		<deterministic id="tani">
+			<state id="nie" />
+			<state id="tak" />
+			<parents>htc_one_mini huawei_honor_6_plus_dual_sim samsung_solid_b2700 sony_xperia_m2_aqua</parents>
+			<resultingstates>tak tak tak tak tak tak tak tak tak tak tak tak tak tak tak tak</resultingstates>
+		</deterministic>
+		<deterministic id="dla_filmow">
+			<state id="nie" />
+			<state id="tak" />
+			<parents>duzy_ekran duza_pamiec_wewnetrzna wytrzymala_bateria dobra_jakosc_dzwieku duze_dpi</parents>
+			<resultingstates>tak tak tak tak tak tak tak tak tak tak tak tak tak tak tak tak tak tak tak tak tak tak tak tak tak tak tak tak tak tak tak tak</resultingstates>
+		</deterministic>
+		<deterministic id="dla_gier">
+			<state id="nie" />
+			<state id="tak" />
+			<parents>duzy_ekran dobry_procesor duza_pamiec_wewnetrzna wytrzymala_bateria trzy_gb_ramu cztery_gb_ramu duze_dpi dotykowy</parents>
+			<resultingstates>tak tak tak tak tak tak tak tak tak tak tak tak tak tak tak tak tak tak tak tak tak tak tak tak tak tak tak tak tak tak tak tak tak tak tak tak tak tak tak tak tak tak tak tak tak tak tak tak tak tak tak tak tak tak tak tak tak tak tak tak tak tak tak tak tak tak tak tak tak tak tak tak tak tak tak tak tak tak tak tak tak tak tak tak tak tak tak tak tak tak tak tak tak tak tak tak tak tak tak tak tak tak tak tak tak tak tak tak tak tak tak tak tak tak tak tak tak tak tak tak tak tak tak tak tak tak tak tak tak tak tak tak tak tak tak tak tak tak tak tak tak tak tak tak tak tak tak tak tak tak tak tak tak tak tak tak tak tak tak tak tak tak tak tak tak tak tak tak tak tak tak tak tak tak tak tak tak tak tak tak tak tak tak tak tak tak tak tak tak tak tak tak tak tak tak tak tak tak tak tak tak tak tak tak tak tak tak tak tak tak tak tak tak tak tak tak tak tak tak tak tak tak tak tak tak tak tak tak tak tak tak tak tak tak tak tak tak tak tak tak tak tak tak tak tak tak tak tak tak tak tak tak tak tak tak tak</resultingstates>
+		</deterministic>
+		<deterministic id="do_smsowania">
+			<state id="nie" />
+			<state id="tak" />
+			<parents>maly_ekran jeden_gb_ramu wygodne_wprowadzanie_tekstu tani</parents>
+			<resultingstates>tak tak tak tak tak tak tak tak tak tak tak tak tak tak tak tak</resultingstates>
+		</deterministic>
+		<deterministic id="do_dzwonienia">
+			<state id="nie" />
+			<state id="tak" />
+			<parents>maly_ekran jeden_gb_ramu tani</parents>
+			<resultingstates>tak tak tak tak tak tak tak tak</resultingstates>
+		</deterministic>
+		<deterministic id="do_sluchania_muzyki">
+			<state id="nie" />
+			<state id="tak" />
+			<parents>maly_ekran wytrzymala_bateria</parents>
+			<resultingstates>tak tak tak tak</resultingstates>
+		</deterministic>
+		<deterministic id="do_robienia_selfie">
+			<state id="nie" />
+			<state id="tak" />
+			<parents>przedni_aparat</parents>
+			<resultingstates>tak tak</resultingstates>
+		</deterministic>
+		<deterministic id="do_podrozy_sluzbowych">
+			<state id="nie" />
+			<state id="tak" />
+			<parents>przedni_aparat szybkie_ladowanie</parents>
+			<resultingstates>tak tak tak tak</resultingstates>
+		</deterministic>
+		<deterministic id="do_pracy">
+			<state id="nie" />
+			<state id="tak" />
+			<parents>przedni_aparat dual_sim czytnik_linii_papilarnych</parents>
+			<resultingstates>tak tak tak tak tak tak tak tak</resultingstates>
+		</deterministic>
+		<deterministic id="dla_zdjec">
+			<state id="nie" />
+			<state id="tak" />
+			<parents>dobry_aparat duze_dpi</parents>
+			<resultingstates>tak tak tak tak</resultingstates>
+		</deterministic>
+		<deterministic id="do_internetu">
+			<state id="nie" />
+			<state id="tak" />
+			<parents>lte</parents>
+			<resultingstates>tak tak</resultingstates>
+		</deterministic>
+		<deterministic id="dla_programowania">
+			<state id="nie" />
+			<state id="tak" />
+			<parents>dwa_gb_ramu</parents>
+			<resultingstates>tak tak</resultingstates>
+		</deterministic>
+		<deterministic id="do_przesylania_multimediow">
+			<state id="nie" />
+			<state id="tak" />
+			<parents>nfc bluetooth</parents>
+			<resultingstates>tak tak tak tak</resultingstates>
+		</deterministic>
+		<deterministic id="dla_orientacji_w_terenie">
+			<state id="nie" />
+			<state id="tak" />
+			<parents>gps</parents>
+			<resultingstates>tak tak</resultingstates>
+		</deterministic>
+		<deterministic id="do_podrozy_w_gory">
+			<state id="nie" />
+			<state id="tak" />
+			<parents>odporny_na_snieg</parents>
+			<resultingstates>tak tak</resultingstates>
+		</deterministic>
+		<deterministic id="do_uprawiania_sportow_zimowych">
+			<state id="nie" />
+			<state id="tak" />
+			<parents>odporny_na_snieg</parents>
+			<resultingstates>tak tak</resultingstates>
+		</deterministic>
+		<deterministic id="do_plywania">
+			<state id="nie" />
+			<state id="tak" />
+			<parents>wodoodporny</parents>
+			<resultingstates>tak tak</resultingstates>
+		</deterministic>
+		<deterministic id="do_podrozy">
+			<state id="nie" />
+			<state id="tak" />
+			<parents>wodoodporny wstrzasoodporny</parents>
+			<resultingstates>tak tak tak tak</resultingstates>
+		</deterministic>
+		<deterministic id="do_biegania">
+			<state id="nie" />
+			<state id="tak" />
+			<parents>wstrzasoodporny</parents>
+			<resultingstates>tak tak</resultingstates>
+		</deterministic>
+	</nodes>
+	<extensions>
+		<genie version="1.0" app="GeNIe 2.0.5590.0" name="SmartSE" faultnameformat="nodestate">
+			<node id="duzy_ekran">
+				<name>duzy_ekran</name>
+				<interior color="00ff00" />
+				<outline color="000080" />
+				<font color="000000" name="Arial" size="7" />
+				<position>890 104 1029 177</position>
+			</node>
+			<node id="maly_ekran">
+				<name>maly_ekran</name>
+				<interior color="00ff00" />
+				<outline color="000080" />
+				<font color="000000" name="Arial" size="7" />
+				<position>884 228 1031 300</position>
+			</node>
+			<node id="dobry_procesor">
+				<name>dobry_procesor</name>
+				<interior color="00ff00" />
+				<outline color="000080" />
+				<font color="000000" name="Arial" size="7" />
+				<position>870 345 1050 430</position>
+			</node>
+			<node id="duza_pamiec_wewnetrzna">
+				<name>duza_pamiec_wewnetrzna</name>
+				<interior color="00ff00" />
+				<outline color="000080" />
+				<font color="000000" name="Arial" size="7" />
+				<position>860 451 1060 569</position>
+			</node>
+			<node id="wytrzymala_bateria">
+				<name>wytrzymala_bateria</name>
+				<interior color="00ff00" />
+				<outline color="000080" />
+				<font color="000000" name="Arial" size="7" />
+				<position>868 586 1052 682</position>
+			</node>
+			<node id="przedni_aparat">
+				<name>przedni_aparat</name>
+				<interior color="00ff00" />
+				<outline color="000080" />
+				<font color="000000" name="Arial" size="7" />
+				<position>875 716 1044 798</position>
+			</node>
+			<node id="dobry_aparat">
+				<name>dobry_aparat</name>
+				<interior color="00ff00" />
+				<outline color="000080" />
+				<font color="000000" name="Arial" size="7" />
+				<position>872 843 1047 920</position>
+			</node>
+			<node id="lte">
+				<name>lte</name>
+				<interior color="00ff00" />
+				<outline color="000080" />
+				<font color="000000" name="Arial" size="7" />
+				<position>887 952 1032 1057</position>
+			</node>
+			<node id="jeden_gb_ramu">
+				<name>jeden_gb_ramu</name>
+				<interior color="00ff00" />
+				<outline color="000080" />
+				<font color="000000" name="Arial" size="7" />
+				<position>875 1087 1045 1170</position>
+			</node>
+			<node id="dwa_gb_ramu">
+				<name>dwa_gb_ramu</name>
+				<interior color="00ff00" />
+				<outline color="000080" />
+				<font color="000000" name="Arial" size="7" />
+				<position>880 1211 1040 1292</position>
+			</node>
+			<node id="trzy_gb_ramu">
+				<name>trzy_gb_ramu</name>
+				<interior color="00ff00" />
+				<outline color="000080" />
+				<font color="000000" name="Arial" size="7" />
+				<position>882 1336 1037 1414</position>
+			</node>
+			<node id="cztery_gb_ramu">
+				<name>cztery_gb_ramu</name>
+				<interior color="00ff00" />
+				<outline color="000080" />
+				<font color="000000" name="Arial" size="7" />
+				<position>863 1456 1056 1541</position>
+			</node>
+			<node id="htc_one_mini">
+				<name>htc_one_mini</name>
+				<interior color="ff0000" />
+				<outline color="000080" />
+				<font color="000000" name="Arial" size="7" />
+				<position>14 1371 157 1417</position>
+			</node>
+			<node id="samsung_galaxy_s6_edge">
+				<name>samsung_galaxy_s6_edge</name>
+				<interior color="ff0000" />
+				<outline color="000080" />
+				<font color="000000" name="Arial" size="7" />
+				<position>20 1126 159 1212</position>
+			</node>
+			<node id="huawei_honor_6_plus_dual_sim">
+				<name>huawei_honor_6_plus_dual_sim</name>
+				<interior color="ff0000" />
+				<outline color="000080" />
+				<font color="000000" name="Arial" size="7" />
+				<position>8 1523 212 1626</position>
+			</node>
+			<node id="samsung_solid_b2700">
+				<name>samsung_solid_b2700</name>
+				<interior color="ff0000" />
+				<outline color="000080" />
+				<font color="000000" name="Arial" size="7" />
+				<position>24 1804 142 1877</position>
+			</node>
+			<node id="sony_xperia_m2_aqua">
+				<name>sony_xperia_m2_aqua</name>
+				<interior color="ff0000" />
+				<outline color="000080" />
+				<font color="000000" name="Arial" size="7" />
+				<position>31 2107 151 2182</position>
+			</node>
+			<node id="nfc">
+				<name>nfc</name>
+				<interior color="00ff00" />
+				<outline color="000080" />
+				<font color="000000" name="Arial" size="7" />
+				<position>905 1584 1014 1661</position>
+			</node>
+			<node id="gps">
+				<name>gps</name>
+				<interior color="00ff00" />
+				<outline color="000080" />
+				<font color="000000" name="Arial" size="7" />
+				<position>898 1702 1022 1789</position>
+			</node>
+			<node id="szybkie_ladowanie">
+				<name>szybkie_ladowanie</name>
+				<interior color="00ff00" />
+				<outline color="000080" />
+				<font color="000000" name="Arial" size="7" />
+				<position>866 1822 1054 1916</position>
+			</node>
+			<node id="dual_sim">
+				<name>dual_sim</name>
+				<interior color="00ff00" />
+				<outline color="000080" />
+				<font color="000000" name="Arial" size="7" />
+				<position>889 1960 1030 2025</position>
+			</node>
+			<node id="dobra_jakosc_dzwieku">
+				<name>dobra_jakosc_dzwieku</name>
+				<interior color="00ff00" />
+				<outline color="000080" />
+				<font color="000000" name="Arial" size="7" />
+				<position>856 2063 1063 2169</position>
+			</node>
+			<node id="wygodne_wprowadzanie_tekstu">
+				<name>wygodne_wprowadzanie_tekstu</name>
+				<interior color="00ff00" />
+				<outline color="000080" />
+				<font color="000000" name="Arial" size="7" />
+				<position>840 2172 1080 2307</position>
+			</node>
+			<node id="czytnik_linii_papilarnych">
+				<name>czytnik_linii_papilarnych</name>
+				<interior color="00ff00" />
+				<outline color="000080" />
+				<font color="000000" name="Arial" size="7" />
+				<position>848 2309 1072 2417</position>
+			</node>
+			<node id="duze_dpi">
+				<name>duze_dpi</name>
+				<interior color="00ff00" />
+				<outline color="000080" />
+				<font color="000000" name="Arial" size="7" />
+				<position>866 2453 1053 2519</position>
+			</node>
+			<node id="bluetooth">
+				<name>bluetooth</name>
+				<interior color="00ff00" />
+				<outline color="000080" />
+				<font color="000000" name="Arial" size="7" />
+				<position>893 2577 1026 2643</position>
+			</node>
+			<node id="dotykowy">
+				<name>dotykowy</name>
+				<interior color="00ff00" />
+				<outline color="000080" />
+				<font color="000000" name="Arial" size="7" />
+				<position>907 2699 1013 2767</position>
+			</node>
+			<node id="wytrzymaly">
+				<name>wytrzymaly</name>
+				<interior color="00ff00" />
+				<outline color="000080" />
+				<font color="000000" name="Arial" size="7" />
+				<position>887 2821 1033 2894</position>
+			</node>
+			<node id="odporny_na_snieg">
+				<name>odporny_na_snieg</name>
+				<interior color="00ff00" />
+				<outline color="000080" />
+				<font color="000000" name="Arial" size="7" />
+				<position>867 2934 1052 3027</position>
+			</node>
+			<node id="wodoodporny">
+				<name>wodoodporny</name>
+				<interior color="00ff00" />
+				<outline color="000080" />
+				<font color="000000" name="Arial" size="7" />
+				<position>875 3064 1045 3144</position>
+			</node>
+			<node id="wstrzasoodporny">
+				<name>wstrzasoodporny</name>
+				<interior color="00ff00" />
+				<outline color="000080" />
+				<font color="000000" name="Arial" size="7" />
+				<position>855 3182 1064 3272</position>
+			</node>
+			<node id="tani">
+				<name>tani</name>
+				<interior color="00ff00" />
+				<outline color="000080" />
+				<font color="000000" name="Arial" size="7" />
+				<position>902 3308 1017 3395</position>
+			</node>
+			<node id="dla_filmow">
+				<name>dla_filmow</name>
+				<interior color="e5f6f7" />
+				<outline color="000080" />
+				<font color="000000" name="Arial" size="7" />
+				<position>1835 242 1963 336</position>
+			</node>
+			<node id="dla_gier">
+				<name>dla_gier</name>
+				<interior color="e5f6f7" />
+				<outline color="000080" />
+				<font color="000000" name="Arial" size="7" />
+				<position>1841 411 1957 477</position>
+			</node>
+			<node id="do_smsowania">
+				<name>do_smsowania</name>
+				<interior color="e5f6f7" />
+				<outline color="000080" />
+				<font color="000000" name="Arial" size="7" />
+				<position>1840 561 1957 640</position>
+			</node>
+			<node id="do_dzwonienia">
+				<name>do_dzwonienia</name>
+				<interior color="e5f6f7" />
+				<outline color="000080" />
+				<font color="000000" name="Arial" size="7" />
+				<position>1835 715 1963 796</position>
+			</node>
+			<node id="do_sluchania_muzyki">
+				<name>do_sluchania_muzyki</name>
+				<interior color="e5f6f7" />
+				<outline color="000080" />
+				<font color="000000" name="Arial" size="7" />
+				<position>1824 860 1974 962</position>
+			</node>
+			<node id="do_robienia_selfie">
+				<name>do_robienia_selfie</name>
+				<interior color="e5f6f7" />
+				<outline color="000080" />
+				<font color="000000" name="Arial" size="7" />
+				<position>1827 1023 1970 1109</position>
+			</node>
+			<node id="do_podrozy_sluzbowych">
+				<name>do_podrozy_sluzbowych</name>
+				<interior color="e5f6f7" />
+				<outline color="000080" />
+				<font color="000000" name="Arial" size="7" />
+				<position>1811 1168 1987 1276</position>
+			</node>
+			<node id="do_pracy">
+				<name>do_pracy</name>
+				<interior color="e5f6f7" />
+				<outline color="000080" />
+				<font color="000000" name="Arial" size="7" />
+				<position>1831 1334 1966 1421</position>
+			</node>
+			<node id="dla_zdjec">
+				<name>dla_zdjec</name>
+				<interior color="e5f6f7" />
+				<outline color="000080" />
+				<font color="000000" name="Arial" size="7" />
+				<position>1830 1491 1967 1575</position>
+			</node>
+			<node id="do_internetu">
+				<name>do_internetu</name>
+				<interior color="e5f6f7" />
+				<outline color="000080" />
+				<font color="000000" name="Arial" size="7" />
+				<position>1819 1645 1979 1731</position>
+			</node>
+			<node id="dla_programowania">
+				<name>dla_programowania</name>
+				<interior color="e5f6f7" />
+				<outline color="000080" />
+				<font color="000000" name="Arial" size="7" />
+				<position>1814 1794 1984 1895</position>
+			</node>
+			<node id="do_przesylania_multimediow">
+				<name>do_przesylania_multimediow</name>
+				<interior color="e5f6f7" />
+				<outline color="000080" />
+				<font color="000000" name="Arial" size="7" />
+				<position>1794 1938 2004 2060</position>
+			</node>
+			<node id="dla_orientacji_w_terenie">
+				<name>dla_orientacji_w_terenie</name>
+				<interior color="e5f6f7" />
+				<outline color="000080" />
+				<font color="000000" name="Arial" size="7" />
+				<position>1813 2102 1984 2208</position>
+			</node>
+			<node id="do_podrozy_w_gory">
+				<name>do_podrozy_w_gory</name>
+				<interior color="e5f6f7" />
+				<outline color="000080" />
+				<font color="000000" name="Arial" size="7" />
+				<position>1808 2255 1990 2365</position>
+			</node>
+			<node id="do_uprawiania_sportow_zimowych">
+				<name>do_uprawiania_sportow_zimowych</name>
+				<interior color="e5f6f7" />
+				<outline color="000080" />
+				<font color="000000" name="Arial" size="7" />
+				<position>1779 2392 2019 2540</position>
+			</node>
+			<node id="do_plywania">
+				<name>do_plywania</name>
+				<interior color="e5f6f7" />
+				<outline color="000080" />
+				<font color="000000" name="Arial" size="7" />
+				<position>1835 2598 1963 2644</position>
+			</node>
+			<node id="do_podrozy">
+				<name>do_podrozy</name>
+				<interior color="e5f6f7" />
+				<outline color="000080" />
+				<font color="000000" name="Arial" size="7" />
+				<position>1832 2755 1966 2799</position>
+			</node>
+			<node id="do_biegania">
+				<name>do_biegania</name>
+				<interior color="e5f6f7" />
+				<outline color="000080" />
+				<font color="000000" name="Arial" size="7" />
+				<position>1839 2911 1958 2955</position>
+			</node>
+		</genie>
+	</extensions>
+</smile>
