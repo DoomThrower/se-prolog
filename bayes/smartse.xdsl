@@ -1,293 +1,293 @@
 <?xml version="1.0" encoding="ISO-8859-1"?>
 <smile version="1.0" id="Network1" numsamples="1000" discsamples="10000">
 	<nodes>
-		<deterministic id="samsung_galaxy_s6_edge">
+		<cpt id="samsung_galaxy_s6_edge">
 			<state id="nie" />
 			<state id="tak" />
-			<resultingstates>tak</resultingstates>
-		</deterministic>
-		<deterministic id="htc_one_mini">
+			<probabilities>0 1</probabilities>
+		</cpt>
+		<cpt id="htc_one_mini">
 			<state id="nie" />
 			<state id="tak" />
-			<resultingstates>tak</resultingstates>
-		</deterministic>
-		<deterministic id="huawei_honor_6_plus_dual_sim">
+			<probabilities>0 1</probabilities>
+		</cpt>
+		<cpt id="huawei_honor_6_plus_dual_sim">
 			<state id="nie" />
 			<state id="tak" />
-			<resultingstates>tak</resultingstates>
-		</deterministic>
-		<deterministic id="samsung_solid_b2700">
+			<probabilities>0 1</probabilities>
+		</cpt>
+		<cpt id="samsung_solid_b2700">
 			<state id="nie" />
 			<state id="tak" />
-			<resultingstates>tak</resultingstates>
-		</deterministic>
-		<deterministic id="sony_xperia_m2_aqua">
+			<probabilities>0 1</probabilities>
+		</cpt>
+		<cpt id="sony_xperia_m2_aqua">
 			<state id="nie" />
 			<state id="tak" />
-			<resultingstates>tak</resultingstates>
-		</deterministic>
-		<deterministic id="duzy_ekran">
+			<probabilities>0 1</probabilities>
+		</cpt>
+		<cpt id="duzy_ekran">
 			<state id="nie" />
 			<state id="tak" />
 			<parents>samsung_galaxy_s6_edge huawei_honor_6_plus_dual_sim</parents>
-			<resultingstates>tak tak tak tak</resultingstates>
-		</deterministic>
-		<deterministic id="maly_ekran">
+			<probabilities>0.1 0.9 0.5 0.5 0.5 0.5 0.1 0.9</probabilities>
+		</cpt>
+		<cpt id="maly_ekran">
 			<state id="nie" />
 			<state id="tak" />
 			<parents>htc_one_mini samsung_solid_b2700 sony_xperia_m2_aqua</parents>
-			<resultingstates>tak tak tak tak tak tak tak tak</resultingstates>
-		</deterministic>
-		<deterministic id="dobry_procesor">
+			<probabilities>0.95 0.05000000000000004 0.66 0.34 0.66 0.34 0.33 0.6699999999999999 0.66 0.34 0.33 0.6699999999999999 0.33 0.6699999999999999 0.05000000000000004 0.95</probabilities>
+		</cpt>
+		<cpt id="dobry_procesor">
 			<state id="nie" />
 			<state id="tak" />
 			<parents>samsung_galaxy_s6_edge</parents>
-			<resultingstates>tak tak</resultingstates>
-		</deterministic>
-		<deterministic id="duza_pamiec_wewnetrzna">
+			<probabilities>0.95 0.05000000000000004 0.05000000000000004 0.95</probabilities>
+		</cpt>
+		<cpt id="duza_pamiec_wewnetrzna">
 			<state id="nie" />
 			<state id="tak" />
 			<parents>samsung_galaxy_s6_edge</parents>
-			<resultingstates>tak tak</resultingstates>
-		</deterministic>
-		<deterministic id="wytrzymala_bateria">
+			<probabilities>0.95 0.05000000000000004 0.05000000000000004 0.95</probabilities>
+		</cpt>
+		<cpt id="wytrzymala_bateria">
 			<state id="nie" />
 			<state id="tak" />
-			<resultingstates>tak</resultingstates>
-		</deterministic>
-		<deterministic id="przedni_aparat">
-			<state id="nie" />
-			<state id="tak" />
-			<parents>samsung_galaxy_s6_edge</parents>
-			<resultingstates>tak tak</resultingstates>
-		</deterministic>
-		<deterministic id="dobry_aparat">
+			<probabilities>0 1</probabilities>
+		</cpt>
+		<cpt id="przedni_aparat">
 			<state id="nie" />
 			<state id="tak" />
 			<parents>samsung_galaxy_s6_edge</parents>
-			<resultingstates>tak tak</resultingstates>
-		</deterministic>
-		<deterministic id="lte">
+			<probabilities>0.95 0.05000000000000004 0.05000000000000004 0.95</probabilities>
+		</cpt>
+		<cpt id="dobry_aparat">
 			<state id="nie" />
 			<state id="tak" />
 			<parents>samsung_galaxy_s6_edge</parents>
-			<resultingstates>tak tak</resultingstates>
-		</deterministic>
-		<deterministic id="jeden_gb_ramu">
+			<probabilities>0.95 0.05000000000000004 0.05000000000000004 0.95</probabilities>
+		</cpt>
+		<cpt id="lte">
+			<state id="nie" />
+			<state id="tak" />
+			<parents>samsung_galaxy_s6_edge</parents>
+			<probabilities>0.95 0.05000000000000004 0.05000000000000004 0.95</probabilities>
+		</cpt>
+		<cpt id="jeden_gb_ramu">
 			<state id="nie" />
 			<state id="tak" />
 			<parents>htc_one_mini</parents>
-			<resultingstates>tak tak</resultingstates>
-		</deterministic>
-		<deterministic id="dwa_gb_ramu">
+			<probabilities>0.95 0.05000000000000004 0.05000000000000004 0.95</probabilities>
+		</cpt>
+		<cpt id="dwa_gb_ramu">
 			<state id="nie" />
 			<state id="tak" />
-			<resultingstates>tak</resultingstates>
-		</deterministic>
-		<deterministic id="trzy_gb_ramu">
-			<state id="nie" />
-			<state id="tak" />
-			<parents>samsung_galaxy_s6_edge huawei_honor_6_plus_dual_sim</parents>
-			<resultingstates>tak tak tak tak</resultingstates>
-		</deterministic>
-		<deterministic id="cztery_gb_ramu">
-			<state id="nie" />
-			<state id="tak" />
-			<resultingstates>tak</resultingstates>
-		</deterministic>
-		<deterministic id="nfc">
+			<probabilities>0 1</probabilities>
+		</cpt>
+		<cpt id="trzy_gb_ramu">
 			<state id="nie" />
 			<state id="tak" />
 			<parents>samsung_galaxy_s6_edge huawei_honor_6_plus_dual_sim</parents>
-			<resultingstates>tak tak tak tak</resultingstates>
-		</deterministic>
-		<deterministic id="gps">
+			<probabilities>0.95 0.05000000000000004 0.55 0.45 0.45 0.55 0.05000000000000004 0.95</probabilities>
+		</cpt>
+		<cpt id="cztery_gb_ramu">
+			<state id="nie" />
+			<state id="tak" />
+			<probabilities>0 1</probabilities>
+		</cpt>
+		<cpt id="nfc">
+			<state id="nie" />
+			<state id="tak" />
+			<parents>samsung_galaxy_s6_edge huawei_honor_6_plus_dual_sim</parents>
+			<probabilities>0.95 0.05000000000000004 0.55 0.45 0.45 0.55 0.05000000000000004 0.95</probabilities>
+		</cpt>
+		<cpt id="gps">
 			<state id="nie" />
 			<state id="tak" />
 			<parents>samsung_galaxy_s6_edge</parents>
-			<resultingstates>tak tak</resultingstates>
-		</deterministic>
-		<deterministic id="szybkie_ladowanie">
+			<probabilities>0.95 0.05000000000000004 0.05000000000000004 0.95</probabilities>
+		</cpt>
+		<cpt id="szybkie_ladowanie">
 			<state id="nie" />
 			<state id="tak" />
-			<resultingstates>tak</resultingstates>
-		</deterministic>
-		<deterministic id="dual_sim">
+			<probabilities>0 1</probabilities>
+		</cpt>
+		<cpt id="dual_sim">
 			<state id="nie" />
 			<state id="tak" />
 			<parents>huawei_honor_6_plus_dual_sim</parents>
-			<resultingstates>tak tak</resultingstates>
-		</deterministic>
-		<deterministic id="dobra_jakosc_dzwieku">
+			<probabilities>0.95 0.05000000000000004 0.05000000000000004 0.95</probabilities>
+		</cpt>
+		<cpt id="dobra_jakosc_dzwieku">
 			<state id="nie" />
 			<state id="tak" />
-			<resultingstates>tak</resultingstates>
-		</deterministic>
-		<deterministic id="wygodne_wprowadzanie_tekstu">
+			<probabilities>0 1</probabilities>
+		</cpt>
+		<cpt id="wygodne_wprowadzanie_tekstu">
 			<state id="nie" />
 			<state id="tak" />
-			<resultingstates>tak</resultingstates>
-		</deterministic>
-		<deterministic id="czytnik_linii_papilarnych">
+			<probabilities>0 1</probabilities>
+		</cpt>
+		<cpt id="czytnik_linii_papilarnych">
 			<state id="nie" />
 			<state id="tak" />
-			<resultingstates>tak</resultingstates>
-		</deterministic>
-		<deterministic id="duze_dpi">
+			<probabilities>0 1</probabilities>
+		</cpt>
+		<cpt id="duze_dpi">
 			<state id="nie" />
 			<state id="tak" />
-			<resultingstates>tak</resultingstates>
-		</deterministic>
-		<deterministic id="bluetooth">
+			<probabilities>0 1</probabilities>
+		</cpt>
+		<cpt id="bluetooth">
 			<state id="nie" />
 			<state id="tak" />
 			<parents>samsung_galaxy_s6_edge huawei_honor_6_plus_dual_sim</parents>
-			<resultingstates>tak tak tak tak</resultingstates>
-		</deterministic>
-		<deterministic id="dotykowy">
+			<probabilities>0.95 0.05000000000000004 0.55 0.45 0.45 0.55 0.05000000000000004 0.95</probabilities>
+		</cpt>
+		<cpt id="dotykowy">
 			<state id="nie" />
 			<state id="tak" />
 			<parents>samsung_galaxy_s6_edge</parents>
-			<resultingstates>tak tak</resultingstates>
-		</deterministic>
-		<deterministic id="wytrzymaly">
+			<probabilities>0.95 0.05000000000000004 0.05000000000000004 0.95</probabilities>
+		</cpt>
+		<cpt id="wytrzymaly">
 			<state id="nie" />
 			<state id="tak" />
 			<parents>samsung_solid_b2700</parents>
-			<resultingstates>tak tak</resultingstates>
-		</deterministic>
-		<deterministic id="odporny_na_snieg">
+			<probabilities>0.95 0.05000000000000004 0.05000000000000004 0.95</probabilities>
+		</cpt>
+		<cpt id="odporny_na_snieg">
 			<state id="nie" />
 			<state id="tak" />
 			<parents>wytrzymaly</parents>
-			<resultingstates>tak tak</resultingstates>
-		</deterministic>
-		<deterministic id="wodoodporny">
+			<probabilities>0.95 0.05000000000000004 0.05000000000000004 0.95</probabilities>
+		</cpt>
+		<cpt id="wodoodporny">
 			<state id="nie" />
 			<state id="tak" />
 			<parents>sony_xperia_m2_aqua wytrzymaly</parents>
-			<resultingstates>tak tak tak tak</resultingstates>
-		</deterministic>
-		<deterministic id="wstrzasoodporny">
+			<probabilities>0.95 0.05000000000000004 0.5 0.5 0.8 0.2 0.05000000000000004 0.95</probabilities>
+		</cpt>
+		<cpt id="wstrzasoodporny">
 			<state id="nie" />
 			<state id="tak" />
 			<parents>wytrzymaly</parents>
-			<resultingstates>tak tak</resultingstates>
-		</deterministic>
-		<deterministic id="tani">
+			<probabilities>0.95 0.05000000000000004 0.05000000000000004 0.95</probabilities>
+		</cpt>
+		<cpt id="tani">
 			<state id="nie" />
 			<state id="tak" />
 			<parents>htc_one_mini huawei_honor_6_plus_dual_sim samsung_solid_b2700 sony_xperia_m2_aqua</parents>
-			<resultingstates>tak tak tak tak tak tak tak tak tak tak tak tak tak tak tak tak</resultingstates>
-		</deterministic>
-		<deterministic id="dla_filmow">
+			<probabilities>0.95 0.05000000000000004 0.75 0.25 0.75 0.25 0.5 0.5 0.75 0.25 0.5 0.5 0.5 0.5 0.25 0.75 0.75 0.25 0.5 0.5 0.5 0.5 0.25 0.75 0.5 0.5 0.75 0.25 0.25 0.75 0.05000000000000004 0.95</probabilities>
+		</cpt>
+		<cpt id="dla_filmow">
 			<state id="nie" />
 			<state id="tak" />
 			<parents>duzy_ekran duza_pamiec_wewnetrzna wytrzymala_bateria dobra_jakosc_dzwieku duze_dpi</parents>
-			<resultingstates>tak tak tak tak tak tak tak tak tak tak tak tak tak tak tak tak tak tak tak tak tak tak tak tak tak tak tak tak tak tak tak tak</resultingstates>
-		</deterministic>
-		<deterministic id="dla_gier">
+			<probabilities>0.95 0.05000000000000004 0.8 0.2 0.8 0.2 0.6 0.4 0.8 0.2 0.6 0.4 0.6 0.4 0.4 0.6 0.8 0.2 0.6 0.4 0.6 0.4 0.4 0.6 0.6 0.4 0.2 0.8 0.4 0.6 0.2 0.8 0.8 0.2 0.6 0.4 0.6 0.4 0.4 0.6 0.6 0.4 0.4 0.6 0.4 0.6 0.2 0.8 0.6 0.4 0.4 0.6 0.4 0.6 0.2 0.8 0.4 0.6 0.2 0.8 0.2 0.8 0.05 0.95</probabilities>
+		</cpt>
+		<cpt id="dla_gier">
 			<state id="nie" />
 			<state id="tak" />
 			<parents>duzy_ekran dobry_procesor duza_pamiec_wewnetrzna wytrzymala_bateria trzy_gb_ramu cztery_gb_ramu duze_dpi dotykowy</parents>
-			<resultingstates>tak tak tak tak tak tak tak tak tak tak tak tak tak tak tak tak tak tak tak tak tak tak tak tak tak tak tak tak tak tak tak tak tak tak tak tak tak tak tak tak tak tak tak tak tak tak tak tak tak tak tak tak tak tak tak tak tak tak tak tak tak tak tak tak tak tak tak tak tak tak tak tak tak tak tak tak tak tak tak tak tak tak tak tak tak tak tak tak tak tak tak tak tak tak tak tak tak tak tak tak tak tak tak tak tak tak tak tak tak tak tak tak tak tak tak tak tak tak tak tak tak tak tak tak tak tak tak tak tak tak tak tak tak tak tak tak tak tak tak tak tak tak tak tak tak tak tak tak tak tak tak tak tak tak tak tak tak tak tak tak tak tak tak tak tak tak tak tak tak tak tak tak tak tak tak tak tak tak tak tak tak tak tak tak tak tak tak tak tak tak tak tak tak tak tak tak tak tak tak tak tak tak tak tak tak tak tak tak tak tak tak tak tak tak tak tak tak tak tak tak tak tak tak tak tak tak tak tak tak tak tak tak tak tak tak tak tak tak tak tak tak tak tak tak tak tak tak tak tak tak tak tak tak tak tak tak</resultingstates>
-		</deterministic>
-		<deterministic id="do_smsowania">
+			<probabilities>0.95 0.05 0.875 0.125 0.875 0.125 0.75 0.25 0.875 0.125 0.75 0.25 0.75 0.25 0.625 0.375 0.875 0.125 0.75 0.25 0.75 0.25 0.625 0.375 0.75 0.25 0.625 0.375 0.625 0.375 0.5 0.5 0.875 0.125 0.75 0.25 0.75 0.25 0.625 0.375 0.75 0.25 0.625 0.375 0.625 0.375 0.5 0.5 0.75 0.25 0.625 0.375 0.625 0.375 0.5 0.5 0.625 0.375 0.5 0.5 0.5 0.5 0.375 0.625 0.875 0.125 0.75 0.25 0.75 0.25 0.625 0.375 0.75 0.25 0.625 0.375 0.625 0.375 0.5 0.5 0.75 0.25 0.625 0.375 0.625 0.375 0.5 0.5 0.625 0.375 0.5 0.5 0.5 0.5 0.375 0.625 0.75 0.25 0.625 0.375 0.625 0.375 0.5 0.5 0.625 0.375 0.5 0.5 0.5 0.5 0.375 0.625 0.625 0.375 0.5 0.5 0.5 0.5 0.375 0.625 0.5 0.5 0.375 0.625 0.375 0.625 0.25 0.75 0.875 0.125 0.75 0.25 0.75 0.25 0.625 0.375 0.75 0.25 0.625 0.375 0.625 0.375 0.5 0.5 0.75 0.25 0.625 0.375 0.625 0.375 0.5 0.5 0.625 0.375 0.5 0.5 0.5 0.5 0.375 0.625 0.75 0.25 0.625 0.375 0.625 0.375 0.5 0.5 0.625 0.375 0.5 0.5 0.5 0.5 0.375 0.625 0.625 0.375 0.5 0.5 0.5 0.5 0.375 0.625 0.5 0.5 0.375 0.625 0.375 0.625 0.25 0.75 0.75 0.25 0.625 0.375 0.625 0.375 0.5 0.5 0.625 0.375 0.5 0.5 0.5 0.5 0.375 0.625 0.625 0.375 0.5 0.5 0.5 0.5 0.375 0.625 0.5 0.5 0.375 0.625 0.375 0.625 0.25 0.75 0.625 0.375 0.5 0.5 0.5 0.5 0.375 0.625 0.5 0.5 0.375 0.625 0.375 0.625 0.25 0.75 0.5 0.5 0.375 0.625 0.375 0.625 0.25 0.75 0.375 0.625 0.25 0.75 0.25 0.75 0.125 0.875 0.875 0.125 0.75 0.25 0.75 0.25 0.625 0.375 0.75 0.25 0.625 0.375 0.625 0.375 0.5 0.5 0.75 0.25 0.625 0.375 0.625 0.375 0.5 0.5 0.625 0.375 0.5 0.5 0.5 0.5 0.375 0.625 0.75 0.25 0.625 0.375 0.625 0.375 0.5 0.5 0.625 0.375 0.5 0.5 0.5 0.5 0.375 0.625 0.625 0.375 0.5 0.5 0.5 0.5 0.375 0.625 0.5 0.5 0.375 0.625 0.375 0.625 0.25 0.75 0.75 0.25 0.625 0.375 0.625 0.375 0.5 0.5 0.625 0.375 0.5 0.5 0.5 0.5 0.375 0.625 0.625 0.375 0.5 0.5 0.5 0.5 0.375 0.625 0.5 0.5 0.375 0.625 0.375 0.625 0.25 0.75 0.625 0.375 0.5 0.5 0.5 0.5 0.375 0.625 0.5 0.5 0.375 0.625 0.375 0.625 0.25 0.75 0.5 0.5 0.375 0.625 0.375 0.625 0.25 0.75 0.375 0.625 0.25 0.75 0.25 0.75 0.125 0.875 0.75 0.25 0.625 0.375 0.625 0.375 0.5 0.5 0.625 0.375 0.5 0.5 0.5 0.5 0.375 0.625 0.625 0.375 0.5 0.5 0.5 0.5 0.375 0.625 0.5 0.5 0.375 0.625 0.375 0.625 0.25 0.75 0.625 0.375 0.5 0.5 0.5 0.5 0.375 0.625 0.5 0.5 0.375 0.625 0.375 0.625 0.25 0.75 0.5 0.5 0.375 0.625 0.375 0.625 0.25 0.75 0.375 0.625 0.25 0.75 0.25 0.75 0.125 0.875 0.625 0.375 0.5 0.5 0.5 0.5 0.375 0.625 0.5 0.5 0.375 0.625 0.375 0.625 0.25 0.75 0.5 0.5 0.375 0.625 0.375 0.625 0.25 0.75 0.375 0.625 0.25 0.75 0.25 0.75 0.125 0.875 0.5 0.5 0.375 0.625 0.375 0.625 0.25 0.75 0.375 0.625 0.25 0.75 0.25 0.75 0.125 0.875 0.375 0.625 0.25 0.75 0.25 0.75 0.125 0.875 0.25 0.75 0.125 0.875 0.125 0.875 0.05000000000000004 0.95</probabilities>
+		</cpt>
+		<cpt id="do_smsowania">
 			<state id="nie" />
 			<state id="tak" />
 			<parents>maly_ekran jeden_gb_ramu wygodne_wprowadzanie_tekstu tani</parents>
-			<resultingstates>tak tak tak tak tak tak tak tak tak tak tak tak tak tak tak tak</resultingstates>
-		</deterministic>
-		<deterministic id="do_dzwonienia">
+			<probabilities>0.95 0.05000000000000004 0.75 0.25 0.75 0.25 0.5 0.5 0.75 0.25 0.5 0.5 0.5 0.5 0.25 0.75 0.25 0.75 0.5 0.5 0.5 0.5 0.25 0.75 0.5 0.5 0.25 0.75 0.25 0.75 0.05 0.95</probabilities>
+		</cpt>
+		<cpt id="do_dzwonienia">
 			<state id="nie" />
 			<state id="tak" />
 			<parents>maly_ekran jeden_gb_ramu tani</parents>
-			<resultingstates>tak tak tak tak tak tak tak tak</resultingstates>
-		</deterministic>
-		<deterministic id="do_sluchania_muzyki">
+			<probabilities>0.95 0.05000000000000004 0.66 0.34 0.66 0.34 0.33 0.6699999999999999 0.66 0.34 0.33 0.6699999999999999 0.33 0.6699999999999999 0.05000000000000004 0.95</probabilities>
+		</cpt>
+		<cpt id="do_sluchania_muzyki">
 			<state id="nie" />
 			<state id="tak" />
 			<parents>maly_ekran wytrzymala_bateria</parents>
-			<resultingstates>tak tak tak tak</resultingstates>
-		</deterministic>
-		<deterministic id="do_robienia_selfie">
+			<probabilities>0.95 0.05000000000000004 0.5 0.5 0.5 0.5 0.05000000000000004 0.95</probabilities>
+		</cpt>
+		<cpt id="do_robienia_selfie">
 			<state id="nie" />
 			<state id="tak" />
 			<parents>przedni_aparat</parents>
-			<resultingstates>tak tak</resultingstates>
-		</deterministic>
-		<deterministic id="do_podrozy_sluzbowych">
+			<probabilities>0.95 0.05000000000000004 0.05000000000000004 0.95</probabilities>
+		</cpt>
+		<cpt id="do_podrozy_sluzbowych">
 			<state id="nie" />
 			<state id="tak" />
 			<parents>przedni_aparat szybkie_ladowanie</parents>
-			<resultingstates>tak tak tak tak</resultingstates>
-		</deterministic>
-		<deterministic id="do_pracy">
+			<probabilities>0.95 0.05000000000000004 0.5 0.5 0.5 0.5 0.05000000000000004 0.95</probabilities>
+		</cpt>
+		<cpt id="do_pracy">
 			<state id="nie" />
 			<state id="tak" />
 			<parents>przedni_aparat dual_sim czytnik_linii_papilarnych</parents>
-			<resultingstates>tak tak tak tak tak tak tak tak</resultingstates>
-		</deterministic>
-		<deterministic id="dla_zdjec">
+			<probabilities>0.95 0.05000000000000004 0.66 0.34 0.66 0.34 0.33 0.6699999999999999 0.33 0.6699999999999999 0.66 0.34 0.66 0.34 0.05000000000000004 0.95</probabilities>
+		</cpt>
+		<cpt id="dla_zdjec">
 			<state id="nie" />
 			<state id="tak" />
 			<parents>dobry_aparat duze_dpi</parents>
-			<resultingstates>tak tak tak tak</resultingstates>
-		</deterministic>
-		<deterministic id="do_internetu">
+			<probabilities>0.95 0.05000000000000004 0.5 0.5 0.5 0.5 0.05000000000000004 0.95</probabilities>
+		</cpt>
+		<cpt id="do_internetu">
 			<state id="nie" />
 			<state id="tak" />
 			<parents>lte</parents>
-			<resultingstates>tak tak</resultingstates>
-		</deterministic>
-		<deterministic id="dla_programowania">
+			<probabilities>0.95 0.05000000000000004 0.05000000000000004 0.95</probabilities>
+		</cpt>
+		<cpt id="dla_programowania">
 			<state id="nie" />
 			<state id="tak" />
 			<parents>dwa_gb_ramu</parents>
-			<resultingstates>tak tak</resultingstates>
-		</deterministic>
-		<deterministic id="do_przesylania_multimediow">
+			<probabilities>0.95 0.05000000000000004 0.05000000000000004 0.95</probabilities>
+		</cpt>
+		<cpt id="do_przesylania_multimediow">
 			<state id="nie" />
 			<state id="tak" />
 			<parents>nfc bluetooth</parents>
-			<resultingstates>tak tak tak tak</resultingstates>
-		</deterministic>
-		<deterministic id="dla_orientacji_w_terenie">
+			<probabilities>0.95 0.05000000000000004 0.5 0.5 0.5 0.5 0.05000000000000004 0.95</probabilities>
+		</cpt>
+		<cpt id="dla_orientacji_w_terenie">
 			<state id="nie" />
 			<state id="tak" />
 			<parents>gps</parents>
-			<resultingstates>tak tak</resultingstates>
-		</deterministic>
-		<deterministic id="do_podrozy_w_gory">
+			<probabilities>0.95 0.05000000000000004 0.05000000000000004 0.95</probabilities>
+		</cpt>
+		<cpt id="do_podrozy_w_gory">
 			<state id="nie" />
 			<state id="tak" />
 			<parents>odporny_na_snieg</parents>
-			<resultingstates>tak tak</resultingstates>
-		</deterministic>
-		<deterministic id="do_uprawiania_sportow_zimowych">
+			<probabilities>0.95 0.05000000000000004 0.05000000000000004 0.95</probabilities>
+		</cpt>
+		<cpt id="do_uprawiania_sportow_zimowych">
 			<state id="nie" />
 			<state id="tak" />
 			<parents>odporny_na_snieg</parents>
-			<resultingstates>tak tak</resultingstates>
-		</deterministic>
-		<deterministic id="do_plywania">
+			<probabilities>0.95 0.05000000000000004 0.05000000000000004 0.95</probabilities>
+		</cpt>
+		<cpt id="do_plywania">
 			<state id="nie" />
 			<state id="tak" />
 			<parents>wodoodporny</parents>
-			<resultingstates>tak tak</resultingstates>
-		</deterministic>
-		<deterministic id="do_podrozy">
+			<probabilities>0.95 0.05000000000000004 0.05000000000000004 0.95</probabilities>
+		</cpt>
+		<cpt id="do_podrozy">
 			<state id="nie" />
 			<state id="tak" />
 			<parents>wodoodporny wstrzasoodporny</parents>
-			<resultingstates>tak tak tak tak</resultingstates>
-		</deterministic>
-		<deterministic id="do_biegania">
+			<probabilities>0.95 0.05000000000000004 0.5 0.5 0.5 0.5 0.05000000000000004 0.95</probabilities>
+		</cpt>
+		<cpt id="do_biegania">
 			<state id="nie" />
 			<state id="tak" />
 			<parents>wstrzasoodporny</parents>
-			<resultingstates>tak tak</resultingstates>
-		</deterministic>
+			<probabilities>0.95 0.05000000000000004 0.05000000000000004 0.95</probabilities>
+		</cpt>
 	</nodes>
 	<extensions>
 		<genie version="1.0" app="GeNIe 2.0.5590.0" name="SmartSE" faultnameformat="nodestate">
@@ -555,7 +555,7 @@
 				<interior color="e5f6f7" />
 				<outline color="000080" />
 				<font color="000000" name="Arial" size="7" />
-				<position>1827 1023 1970 1109</position>
+				<position>1832 1018 1975 1104</position>
 			</node>
 			<node id="do_podrozy_sluzbowych">
 				<name>do_podrozy_sluzbowych</name>
